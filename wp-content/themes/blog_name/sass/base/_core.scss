@@ -1,0 +1,141 @@
+body {
+  font: $font-main;
+}
+
+.header-headline {
+  padding: .75em .7rem;
+  font-size: 1.25em;
+  text-transform: uppercase;
+  background: $dark-bg;
+  color: $light-text;
+  position: relative;
+  &.margin {
+    margin-bottom: 2.75em;
+  }
+  &:after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 0 solid transparent;
+    border-top: 40px solid $dark-bg;
+    position: absolute;
+    bottom: 0;
+    left: 6%;
+    -webkit-transform: skewX(35deg) translateY(100%);
+    transform: skewX(35deg) translateY(100%);
+  }
+}
+
+.main-headlines {
+  font-size: .87em;
+  &.margin {
+    margin-bottom: 2.2em;
+  }
+}
+
+.main-button {
+  padding: 1.5em 2.6rem;
+  font-size: .81em;
+  display: inline-block;
+  text-transform: uppercase;
+  color: $color-text;
+  border: 2px solid;
+  background: transparent;
+}
+
+.light-text {
+  color: $light-text;
+}
+
+.color-text {
+  color: $color-text;
+}
+
+.mid-tone-text {
+  color: $mid-tone-text;
+}
+
+.dark-text {
+  color: $dark-text;
+}
+
+.color-text-hover:hover {
+  color: $color-bg;
+}
+
+.light-bg {
+  background: $light-bg;
+}
+
+.color-bg {
+  background: $color-bg;
+}
+
+.mid-tone-bg {
+  background: $mid-tone-bg;
+}
+
+.dark-bg {
+  background: $dark-bg;
+}
+
+.gradient-bg {
+  background: repeating-linear-gradient(
+                  130deg,
+                  transparent,
+                  transparent 5px,
+                  rgba(0, 0, 0, .5) 6px,
+                  rgba(0, 0, 0, .5) 6px
+  )
+}
+
+.color-border-top {
+  border-top: 4px solid $color-bg;
+}
+
+.balloon-up {
+  position: relative;
+  &:after {
+    content: '';
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-left: 50px solid transparent;
+    border-right: 0 solid transparent;
+    border-bottom: 80px solid $color-bg;
+    transform: skewX(-35deg) translateY(-100%);
+  }
+}
+
+.img-responsive {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.row {
+  width: 100%;
+}
+
+.pag-wrap {
+  margin-bottom: 3em;
+}
+
+.page-numbers {
+  display: inline-block;
+  padding: .5em;
+  color: $dark-text;
+  background: rgba(0,0,0, .3);
+  &.next,
+  &.prev {
+    display: none;
+  }
+  &.current,
+  &:hover {
+    color: $light-text;
+    background: rgba(0,0,0, .8);
+  }
+}

@@ -1,0 +1,80 @@
+.widget-area section {
+  padding: 1em .6em;
+  margin-bottom: 2em;
+  background: repeating-linear-gradient(
+                  130deg,
+                  transparent,
+                  transparent 5px,
+                  rgba(0, 0, 0, .5) 6px,
+                  rgba(0, 0, 0, .5) 6px
+  )
+}
+
+.widget-title {
+  margin-bottom: 1.4em;
+  font: 1em $font-headline-bold;
+}
+
+.wli_popular_posts-class .widget-title {
+  padding: 1em .6rem;
+  margin: -1em -.6em 4em;
+  background: $dark-bg;
+  color: $light-text;
+  position: relative;
+  &:after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 0 solid transparent;
+    border-top: 40px solid $dark-bg;
+    position: absolute;
+    bottom: 0;
+    left: 6%;
+    -webkit-transform: skewX(35deg) translateY(100%);
+    transform: skewX(35deg) translateY(100%);
+  }
+}
+
+.wli_popular_posts-class ul li h3 {
+  font-size: 1em;
+}
+
+.wli_popular_posts-class ul li h3 a{
+  display: block;
+  padding: 1em 1rem;
+  background: $light-bg;
+  color: $dark-text;
+  margin-bottom: .5em;
+  transition: .3s ease-in-out;
+  box-shadow: 0 2px 2px rgba(0,0,0, .3);
+  &:hover {
+    background: $color-bg;
+  }
+}
+
+.cat-item {
+  margin-bottom: .75em;
+  position: relative;
+  a {
+    padding: .75em;
+    color: $mid-tone-text;
+    display: flex;
+    justify-content: space-between;
+    background: $dark-bg;
+    transition: .3s ease-in-out;
+    &:hover {
+      background: $color-bg;
+      color: $dark-text;
+    }
+  }
+  span {
+    padding: 0.6em 1rem;
+    display: block;
+    position: absolute;
+    top: 10%;
+    right: 2%;
+    bottom: 10%;
+    background: $color-bg;
+  }
+}

@@ -1,0 +1,28 @@
+.post-headline {
+  font-size: 1.4em;
+  &.margin {
+    margin-bottom: .5em;
+  }
+}
+
+.day {
+  font: 3em $font-headline-bold;
+  transition: .3s ease-in-out;
+}
+
+.month {
+  font: 1em $font-headline-light;
+  transition: .3s ease-in-out;
+}
+
+.date-link {
+  padding: .3em;
+}
+
+.entry-date {
+  border: 1px solid rgba(255, 255, 255, .5);
+}
+
+.entry-content {
+  font: 1em $font-text;
+}

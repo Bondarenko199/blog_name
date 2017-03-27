@@ -1,0 +1,75 @@
+.site-header {
+  background: url("./images/header-bg.jpg") 50% 50% no-repeat;
+  background-size: cover;
+  &.margin {
+    margin-bottom: 1.12em;
+  }
+}
+
+.navbar {
+  padding-bottom: 0;
+}
+
+.logo-search-container {
+  padding: 0 0 1.4em;
+}
+
+.toggle-button {
+  left: 9rem;
+}
+
+
+.nav-menu {
+  width: 100%;
+  padding: .75em .75rem;
+}
+
+.menu-item {
+  border-left: 1px solid rgba(255, 255, 255, .5);
+  &:hover {
+    border-color: transparent;
+  }
+  a {
+    padding: .75em .75rem;
+    display: block;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    color: $dark-text;
+    transition: .3s ease-in-out;
+    &:hover {
+      background: $light-bg;
+      &:after {
+        content: '';
+        width: 0;
+        height: 0;
+        border-top: 8px solid transparent;
+        border-left: 8px solid $color-bg;
+        border-bottom: 8px solid transparent;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+      }
+    }
+  }
+  width: 10%;
+}
+
+.current-menu-item {
+  background: $light-bg;
+  border: none;
+  position: relative;
+  &:after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-left: 8px solid $color-bg;
+    border-bottom: 8px solid transparent;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+}

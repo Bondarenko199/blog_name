@@ -1,0 +1,18 @@
+.main-footer {
+  padding: 1.4em 0;
+  background: url("./images/footer-bg.jpg") 50% 50% no-repeat;
+  background-size: cover;
+}
+
+.rights {
+  font: .9em $font-text-bold;
+}
+
+.social-container {
+  font-size: 2em;
+  display: block;
+  border-radius: 5%;
+  &.margin {
+    margin: 0 .1em;
+  }
+}
